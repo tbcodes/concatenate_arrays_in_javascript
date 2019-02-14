@@ -1,0 +1,20 @@
+// Creating 2 variables using let - Traditional Way 
+let arr1 = ["Maria", "John", "Peter", "Michael"];
+let arr2 = ["Steve", "Sandra", "Josh", "Henry", "Robert", "Aaron"];
+
+// Creating 2 variables using let - Easy Way 
+let arr1 = ["Maria", "John", "Peter", "Michael"], arr2 = ["Steve", "Sandra", "Josh", "Henry", "Robert", "Aaron"];
+
+// Method nº 1:
+let combinedArray = arr1.concat(arr2);
+// Use the Browser Console in order to show the final result
+console.log (combinedArray);
+
+// Method nº 2:
+let combArr = [].concat(arr1, arr2);
+// Use the Browser Console in order to show the final result
+console.log (combArr);
+
+// Method nº 3 (Spread Operator):
+let spreadArray = [...arr1, ...arr2];
+console.log (spreadArray);
